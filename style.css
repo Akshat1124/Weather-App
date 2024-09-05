@@ -1,0 +1,100 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* App Container */
+.app-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 20px;
+}
+
+/* Input */
+#city-input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button with Hover Animation */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Weather Result */
+#weather-result, #loader {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Hidden Loader */
+.hidden {
+    display: none;
+}
+
+/* Loader */
+#loader {
+    font-size: 20px;
+    color: #007bff;
+}
+
+/* Temperature Styling */
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff5733;
+    margin: 10px 0;
+}
+
+/* Weather Info Styling */
+.weather-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.weather-info p {
+    margin: 5px 15px;
+    font-size: 18px;
+}
+
+/* City and Country Name */
+.city-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Main weather description */
+.weather-description {
+    font-style: italic;
+    color: #007bff;
+}
