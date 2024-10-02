@@ -1,1 +1,1 @@
-Basic Weaather App
+Basic Weather App Built in JS
