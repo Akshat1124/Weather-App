@@ -55,16 +55,16 @@ async function getWeather() {
 
         document.body.className = backgroundClass;
 
-        // const weatherResult = `
-        //     <div class="city-name">${data.name}, ${data.sys.country} ${weatherEmoji}</div>
-        //     <div class="temperature">${data.main.temp}°C</div>
-        //     <div class="weather-info">
-        //         <p>Weather: <span class="weather-description">${data.weather[0].description}</span></p>
-        //         <p>Humidity: ${data.main.humidity}%</p>
-        //         <p>Wind Speed: ${data.wind.speed} m/s</p>
-        //         <p>Current Time: ${currentTime}</p>
-        //     </div>
-        // `;
+        const weatherResult = `
+            <div class="city-name">${data.name}, ${data.sys.country} ${weatherEmoji}</div>
+            <div class="temperature">${data.main.temp}°C</div>
+            <div class="weather-info">
+                <p>Weather: <span class="weather-description">${data.weather[0].description}</span></p>
+                <p>Humidity: ${data.main.humidity}%</p>
+                <p>Wind Speed: ${data.wind.speed} m/s</p>
+                <p>Current Time: ${currentTime}</p>
+            </div>
+        `;
 
         document.getElementById('weather-result').innerHTML = weatherResult;
         document.getElementById('weather-result').classList.remove('hidden');
